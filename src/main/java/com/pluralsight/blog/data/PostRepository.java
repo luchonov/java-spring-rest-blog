@@ -10,7 +10,7 @@ import java.util.List;
 
 public interface PostRepository extends JpaRepository<Post, Long> {
 
-    @RestResource(rel="contains-title", path="containsT")
+    @RestResource(rel="contains-title", path="containsTitle")
     public List<Post> findByTitleContaining (String title);
 
 }
